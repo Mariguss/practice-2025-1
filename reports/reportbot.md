@@ -56,6 +56,7 @@ pip install streamlit groq python-dotenv
 ```
 ### Шаг 3: Создание основного приложения
 Используйте следующие источники:
+
 <https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/>
 
 <https://youtu.be/jR1ZQQ5W07M>
@@ -90,3 +91,32 @@ os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
 client = Groq()
 ```
+### Шаг 4: Запуск приложения
+
+Выполните в терминале:
+
+```streamlit run src/app.py```
+
+Бот запустится локально, чтбы его развернуть используйте облако streamlit
+
+<https://youtu.be/xly4dMtAxZE?si=z8uutupYRrNXBZwd>
+
+<https://streamlit.io/cloud>
+
+### Заключение
+
+В этом руководстве мы создали полнофункционального чат-ассистента с использованием современных технологий. Приложение:
+
+Имеет простой и интуитивный интерфейс
+
+Использует мощную модель Llama 3
+
+Поддерживает контекст разговора
+
+Легко расширяется
+
+Для дальнейшего развития проекта изучите:
+
+Документацию Streamlit <https://docs.streamlit.io/>
+
+Llama 3 Technical Paper <https://ai.meta.com/research/publications/llama-3/>
