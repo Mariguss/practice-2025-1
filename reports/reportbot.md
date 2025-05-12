@@ -56,11 +56,12 @@ pip install streamlit groq python-dotenv
 ```
 ### Шаг 3: Создание основного приложения
 Используйте следующие источники:
-<https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/>
-<https://youtu.be/jR1ZQQ5W07M>
-<https://habr.com/ru/articles/825678/>
-<https://lobehub.com/ru/blog/use-lobechat-ui-for-llama-3-on-groq>
+<https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/>..
+<https://youtu.be/jR1ZQQ5W07M>..
+<https://habr.com/ru/articles/825678/>..
+<https://lobehub.com/ru/blog/use-lobechat-ui-for-llama-3-on-groq>..
 Пример начала кода
+```
 import os
 import json
 
@@ -84,6 +85,4 @@ GROQ_API_KEY = config_data["GROQ_API_KEY"]
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
 client = Groq()
-```
-
 ```
