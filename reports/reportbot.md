@@ -54,3 +54,36 @@ pip install streamlit groq python-dotenv
   "GROQ_API_KEY": "ваш_api_ключ_здесь"
 }
 ```
+### Шаг 3: Создание основного приложения
+Используйте следующие источники:
+<https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/>
+<https://youtu.be/jR1ZQQ5W07M>
+<https://habr.com/ru/articles/825678/>
+<https://lobehub.com/ru/blog/use-lobechat-ui-for-llama-3-on-groq>
+Пример начала кода
+import os
+import json
+
+import streamlit as st
+from groq import Groq
+
+
+# streamlit page configuration
+st.set_page_config(
+    page_title="Your personal assistant",
+    page_icon="😊",
+    layout="centered"
+)
+
+working_dir = os.path.dirname(os.path.abspath(__file__))
+config_data = json.load(open(f"{working_dir}/config.json"))
+
+GROQ_API_KEY = config_data["GROQ_API_KEY"]
+
+# save the api key to environment variable
+os.environ["GROQ_API_KEY"] = GROQ_API_KEY
+
+client = Groq()
+```
+
+```
